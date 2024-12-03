@@ -65,9 +65,19 @@ A simple iOS app that allows users to generate random color codes, store them lo
 # Screenshots
 1. Color Generation Screen
 
+![Simulator Screenshot - iPhone 16 Pro - 2024-12-04 at 00 43 39](https://github.com/user-attachments/assets/8f6c5741-f850-405f-a429-57f31f170024)
+
 ![Simulator Screenshot - iPhone 16 Pro - 2024-12-04 at 00 44 16](https://github.com/user-attachments/assets/e3eb2ae1-e1c9-454a-916e-f9c4e5bb33fc)
 
-![Simulator Screenshot - iPhone 16 Pro - 2024-12-04 at 00 43 39](https://github.com/user-attachments/assets/8f6c5741-f850-405f-a429-57f31f170024)
+2. Offline Mode
+
+![Simulator Screenshot - iPhone 16 Pro - 2024-12-04 at 02 13 08](https://github.com/user-attachments/assets/4e324c78-6eb7-4f56-9f9f-b117497596ba)
+
+3. Online Sync Status
+
+![Simulator Screenshot - iPhone 16 Pro - 2024-12-04 at 02 25 31](https://github.com/user-attachments/assets/bacdaff4-1bbc-4b7d-973f-88bf0e827e21)
+
+![Simulator Screenshot - iPhone 16 Pro - 2024-12-04 at 02 25 35](https://github.com/user-attachments/assets/bc92621a-2885-46d1-a08b-c092beffd07b)
 
 # Technologies Used
 * Swift: For app development.
