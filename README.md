@@ -88,4 +88,4 @@ Contributions are welcome! Please follow these steps:
 
 # Contact
 For any questions or suggestions, feel free to contact:
-* Suraj Bhatt: srjsrk200@example.com
+* Suraj Bhatt: srjsrk200@gmail.com
