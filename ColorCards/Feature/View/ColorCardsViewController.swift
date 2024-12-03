@@ -75,7 +75,7 @@ class ColorCardsViewController: UIViewController {
     @objc private func handleNetworkChange(_ notification: Notification) {
         guard let isConnected = notification.object as? Bool else { return }
         if isConnected && !(self.isFirstTime ?? false) {
-            self.internetConnectivityPopUp(message:Constant.Alert.internetBack)
+            self.internetConnectivityPopUp(message:self.colorCodesArray?.count ?? 0 > 1 ? Constant.Alert.syncingStart : Constant.Alert.internetBack)
             self.aColorCardsViewModel.retrieveColorCodeData()
         } else if !isConnected && !(self.isFirstTime ?? false)  {
             self.internetConnectivityPopUp(message:Constant.Alert.internetGone)

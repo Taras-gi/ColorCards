@@ -18,8 +18,9 @@ enum Constant {
         static let invalidHex     = "Invalid hex color code."
         static let noInternet     = "You’re offline !!!"
         static let notifier       = "Unable to start notifier"
-        static let internetBack   = "You’re back online. Syncing data..."
+        static let internetBack   = "You’re back online."
         static let internetGone   = "You’re offline !!!"
+        static let syncingStart   = "You’re back online.Syncing data..."
         static let syncingDone    = "Data synced successfully."
     }
     

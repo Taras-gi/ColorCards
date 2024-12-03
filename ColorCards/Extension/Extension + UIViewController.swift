@@ -17,7 +17,7 @@ extension UIViewController {
         DispatchQueue.main.async {
             let toast = Toast.text(message)
             toast.show()
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.8){
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.8){
                 toast.close()
             }
         }
