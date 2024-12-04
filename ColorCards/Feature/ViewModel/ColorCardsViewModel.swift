@@ -83,7 +83,7 @@ class ColorCardsViewModel {
         if let index = data.firstIndex(where: {$0.colorCode == self.nonSyncedColorArray?[index].colorCode}) {
             let selectedColorData:ColorHex = data[index]
             guard let colorDict = [Constant.CoreData.colorCode:selectedColorData.colorCode ?? "",Constant.CoreData.isSynced:true,Constant.CoreData.timeStamp:selectedColorData.timeStamp ?? Date()] as? [String:Any] else {return}
-            DataBaseStorage.shareInstance.isUpdate(object: colorDict, index: index)
+            DataBaseStorage.shareInstance.updateData(object: colorDict, index: index)
         }
     }
     

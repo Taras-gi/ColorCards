@@ -9,12 +9,12 @@ import Foundation
 import UIKit
 import CoreData
 
-final class DataBaseStorage {
+class DataBaseStorage {
     static var shareInstance = DataBaseStorage()
     
     let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
-
-// MARK:   Create the data
+    
+    // MARK:   Create the data
     func save(object:[String:Any],completion:@escaping(Bool) -> Void){
         let colorHex = NSEntityDescription.insertNewObject(forEntityName: Constant.CoreData.entityName, into: context!) as! ColorHex
         colorHex.colorCode = object[Constant.CoreData.colorCode] as? String
@@ -41,11 +41,11 @@ final class DataBaseStorage {
             print(Constant.CoreData.notGetData)
         }
         return array
-}
-
+    }
+    
     // MARK: Update the data
-    func isUpdate(object:[String:Any],index:Int) {
-    let array = getColorCodes()
+    func updateData(object:[String:Any],index:Int) {
+        let array = getColorCodes()
         array?[index].colorCode = array?[index].colorCode
         array?[index].isSynced = true
         array?[index].timeStamp = array?[index].timeStamp
@@ -56,5 +56,5 @@ final class DataBaseStorage {
         }
     }
 }
-    
+
 

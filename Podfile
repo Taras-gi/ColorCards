@@ -6,10 +6,7 @@ target 'ColorCards' do
   use_frameworks!
 
   # Pods for ColorCards
-#  pod 'Alamofire'
   pod 'Firebase/Firestore'
-  pod 'Firebase/Auth'
-  pod 'Firebase/Database'
   pod "ToastViewSwift"
   pod 'ReachabilitySwift'
 
